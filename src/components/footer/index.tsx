@@ -1,7 +1,11 @@
+import { Box } from "@mui/material";
+import ChangeLanguageButton from "../buttons/ChangeLanguageButton";
+import ChangeThemeButton from "../buttons/ChangeThemeButton";
+
 export default function Header (){
     return (
-        <>
-            <p>Soy footer</p>
-        </>
+        <Box justifyContent={"space-between"}>
+            Soy Footer
+        </Box>
     )
 }
