@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "@mui/material";
+import "./App.css";
+import Footer from "./components/footer";
+import Header from "./components/footer";
+
+// HACER QUE FUNCIONE EL CHILDREN Y EL ..PROPS
+/* import MainContainer from './components/layout/MainContainer'; */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Container>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      </Container>
+      <Footer />
     </div>
   );
 }
